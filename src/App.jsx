@@ -1,10 +1,10 @@
-import MainStructure from "./components/mainStructure"
+import Base from "./components/base"
 function App() {
 
 
   return (
     <>
-      <MainStructure />
+      <Base />
     </>
   )
 }
