@@ -5,10 +5,10 @@ import Footer from "./footer/footer";
 
 const Base = () => {
   return (
-    <div className="bg-slate-100 flex flex-col h-full py-2">
+    <div className="bg-slate-100 w-full flex flex-col h-full  py-2">
       <Header />
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Contents />
 
