@@ -5,6 +5,7 @@ import DoubleRowBlock from "./doubleRowBlock";
 import Pane from "../pane";
 import Button from "../button";
 import MainContent from "../mainContent";
+import NoteCard from "../noteCard";
 
 const Contents = () => {
   return (
@@ -25,10 +26,19 @@ const Contents = () => {
       </Sidebar>
 
       <MainContent>
+        <NoteCard
+          title="What is Mental Health"
+          text1="Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It has intrinsic and instrumental value and is integral to our well-being."
+          img="./what-is-mental-health.jpg"
+        />
 
+        <NoteCard
+          imgLeft
+          title="What is Mental Health"
+          text1="Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It has intrinsic and instrumental value and is integral to our well-being."
+          img="./what-is-mental-health.jpg"
+        />
       </MainContent>
-
-  
     </div>
 
     /* <ContentOneBlock>
