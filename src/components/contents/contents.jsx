@@ -1,11 +1,9 @@
-import ContentOneBlock from "./contentOneBlock";
 import Sidebar from "./sidebar";
-import ContentTwoBlock from "./contentTwoBlock";
-import DoubleRowBlock from "./doubleRowBlock";
-import Pane from "../pane";
-import Button from "../button";
-import MainContent from "../mainContent";
-import NoteCard from "../noteCard";
+import Pane from "./pane";
+import Button from "../button/button";
+import MainContent from "./mainContent";
+import NoteCardRightPic from "../noteCard/noteCardRightPic";
+import NoteCardLeftPic from "../noteCard/noteCardLeftPic";
 
 const Contents = () => {
   return (
@@ -26,17 +24,16 @@ const Contents = () => {
       </Sidebar>
 
       <MainContent>
-        <NoteCard
+        <NoteCardRightPic
           title="What is Mental Health"
           text1="Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It has intrinsic and instrumental value and is integral to our well-being."
-          img="./what-is-mental-health.jpg"
+          img="./mentalHealth.jpg"
         />
 
-        <NoteCard
-          imgLeft
-          title="What is Mental Health"
-          text1="Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It has intrinsic and instrumental value and is integral to our well-being."
-          img="./what-is-mental-health.jpg"
+        <NoteCardLeftPic
+          title="How Can A Counselor Help"
+          text1="A Licensed Professional Counselor (LPC) can help with mental health issues by providing a safe space to discuss thoughts and feelings, conducting assessments to identify concerns, developing personalized treatment plans, and offering support to help individuals manage their emotions, improve coping skills, and work towards positive changes in their lives."
+          img="./counseling.jpg"
         />
       </MainContent>
     </div>

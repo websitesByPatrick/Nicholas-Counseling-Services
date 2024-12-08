@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <div className="w-11/12 h-52 bg-slate-800 text-center flex justify-center items-center gap-10 m-1">
-      <div className="w-40 h-40  border-slate-900 bg-slate-800 flex justify-center shadow-xl shadow-slate-600 rounded-full">
+    <div className="w-11/12 h-52 bg-gray-800 text-center flex justify-center items-center gap-10 m-1">
+      <div className="w-40 h-40  flex justify-center shadow-xl shadow-gray-600 rounded-full">
         <img
           className="w-40 rounded-full m-2  shadow-gray-500"
-          src="../public/marica.jpg"
+          src="./marica.jpg"
           alt=""
         />
       </div>
