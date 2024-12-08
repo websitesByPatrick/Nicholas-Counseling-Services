@@ -1,14 +1,11 @@
 import Header from "./header/header";
-import Navbar from "./navbar/navbar";
 import Contents from "./contents/contents";
 import Footer from "./footer/footer";
 
 const Base = () => {
   return (
-    <div className="bg-slate-100 w-full flex flex-col h-full  py-2">
+    <div className="bg-slate-100 w-full flex flex-col h-full items-center">
       <Header />
-
-      {/* <Navbar /> */}
 
       <Contents />
 
