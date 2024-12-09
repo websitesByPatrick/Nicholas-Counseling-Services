@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --bg-dark: #10375C;
+    --bg-light: #F4F6FF;
+    --text-dark: #2D3250;
+    --text-light: #F4F6FF;
+    --overlay-margin: 12px;
+    --sidebar-heading-font-size: 1.5rem;
+    --sidebar-text-font-size: 1.0rem;
+}
+
+.header {
+    height: 208px;
+    width: 94%;
+    background-color: var(--bg-dark);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+.header-img {
+    height: 10rem;
+    border-radius: 50%;
+}
+.header-text-wrapper {
+    color: var(--text-light)
+}
+.header-text-1 {
+    font-size: 2rem;
+    line-height: 35px;
+}
+
+.header-text-2 {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+}
+
+
+
+
+
+
+.sidebar {
+    width: 25%;
+    background-color: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-items {   
+    
+    color: var(--text-dark);
+    margin: var(--overlay-margin);
+}
+.sidebar-wrapper {
+    height: 100%;
+    margin: var(--overlay-margin);
+    background-color: var(--bg-light);
+}
+
+.pane {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pane-icon {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+.pane-text {
+    margin-top: 5px;
+    font-size: var(--sidebar-text-font-size);
+}

@@ -9,14 +9,10 @@ const Contents = () => {
   return (
     <div className="flex w-11/12 gap-1">
       <Sidebar>
-        <Pane
-          title="Contact Information"
-          list={[
-            { title: "Email", text: "marica@clearhopewellness.com" },
-            { title: "Phone", text: "281-769-2238 Ext.640" },
-            { title: "Facebook", text: "Follow Me On Facebook" },
-          ]}
-        />
+        <Pane icon="./phone.png" text="281-769-2238 ext. 640" />
+        <Pane icon="./email.png" text="marica@clearhopewellness.com" />
+        <Pane icon="./facebook.png" text="Follow Me On FaceBook" />
+
         <Button
           text="Book Appointment"
           link="https://www.therapyportal.com/p/clearhope77505/"
