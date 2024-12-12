@@ -1,9 +1,14 @@
+import styles from "./navbar.module.css";
+import Button from "../button/button"
 const Navbar = () => {
   return (
-    <div className="h-20 w-100 mx-2 bg-slate-900 flex justify-center items-center">
-    <div className="text-4xl text-slate-100">Navbar</div>
-  </div>
-  )
-}
+    <div className={styles.navbar}>
+        <Button text="Email Me" icon="email.png" />
+        <Button text="Follow Me On Facebook" icon="facebook.png" />
+        <Button text="Book Appointment" icon="calendar.png" />
+      
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

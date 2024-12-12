@@ -1,0 +1,32 @@
+.header {
+    height: 208px;
+    width: 94%;
+    background-color: var(--bg-dark);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 20px;
+    border-bottom: 2px solid white;
+    
+    
+}
+.headerImg {
+    height: 10rem;
+    border-radius: 50%;
+}
+.headerTextWrapper {
+    color: var(--text-light);
+
+}
+.headerText1 {
+    font-size: 2rem;
+    line-height: 35px;
+}
+
+.headerText2 {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+}

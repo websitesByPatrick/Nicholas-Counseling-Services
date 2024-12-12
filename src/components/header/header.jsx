@@ -1,13 +1,17 @@
+import styles from './header.module.css'
 const Header = () => {
+ 
   return (
-    <div className="header">
-      <img className="header-img" src="./marica.jpg" alt="" />
+    <div className={styles.header}>
+      <img className={styles.headerImg} src="./marica.jpg" alt="" />
 
-      <div className="header-text-wrapper">
-        <p className="header-text-1">Marica Nicholas, LPC-Associate</p>
-        <p className="header-text-1">Counseling Services</p>
-        <p className="header-text-2">Supervised By Ana Valenzuela, LPC-S</p>
+      <div className={styles.headerTextWrapper}>
+        <p className={styles.headerText1}>Marica Nicholas, LPC-Associate</p>
+        <p className={styles.headerText1}>Counseling Services</p>
+        <p className={styles.headerText2}>Supervised By Ana Valenzuela, LPC-S</p>
+        
       </div>
+      <hr></hr>
     </div>
   );
 };

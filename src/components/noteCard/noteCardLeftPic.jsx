@@ -1,6 +1,6 @@
 const NoteCardLeftPic = (props) => {
   return (
-    <div className="flex w-[950px] h-[400px]">
+    <div className="flex w-full">
 
       <div className="flex w-1/2 bg-gray-100 my-3 pl-2 ">
         <img className="object-contain" src={props.img} alt="" />

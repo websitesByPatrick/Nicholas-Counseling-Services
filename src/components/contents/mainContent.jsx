@@ -1,7 +1,7 @@
 
 const MainContent = (props) => {
   return (
-    <div className="flex flex-col w-9/12 bg-gray-600">
+    <div className="flex flex-col w-[94%]">
       
       <div className="w-full flex flex-col">
 

@@ -1,0 +1,18 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 94%;
+    height: 100px;
+    background-color: var(--bg-dark);
+    border-bottom: 2px white solid;
+    margin-bottom: 5px;
+   
+}
+
+.navItems {
+
+}

@@ -1,38 +1,46 @@
-import Sidebar from "./sidebar";
-import Pane from "./pane";
-import Button from "../button/button";
 import MainContent from "./mainContent";
 import NoteCardRightPic from "../noteCard/noteCardRightPic";
 import NoteCardLeftPic from "../noteCard/noteCardLeftPic";
+import styles from './contents.module.css'
 
 const Contents = () => {
   return (
-    <div className="flex w-11/12 gap-1">
-      <Sidebar>
-        <Pane icon="./phone.png" text="281-769-2238 ext. 640" />
-        <Pane icon="./email.png" text="marica@clearhopewellness.com" />
-        <Pane icon="./facebook.png" text="Follow Me On FaceBook" />
 
-        <Button
-          text="Book Appointment"
-          link="https://www.therapyportal.com/p/clearhope77505/"
-        />
-      </Sidebar>
-
-      <MainContent>
+      <MainContent className={styles.MainContent}>
         <NoteCardRightPic
           title="What is Mental Health"
-          text1="Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It has intrinsic and instrumental value and is integral to our well-being."
-          img="./mentalHealth.jpg"
+          text={[
+            "Mental refers to the emotional, psychological, and social well-being of an individual. It affects how people think, feel, and act, as well as how they handle stress, relate to others, and make choices. Mental health is crucial at every stage of life, from childhood and adolescence through adulthood.",
+            " Key aspects of mental health include:",
+            "1. Emotional well-being: The ability to cope with life’s challenges and manage emotions effectively.",
+            "2. Psychological resilience: The capacity to recover from difficulties and adapt to change.",
+            "3. Social well-being: The quality of relationships and social networks that provide support and connection.",
+            "Good mental health contributes to overall well-being and is influenced by various factors, including genetics, environment, life experiences, and family history. Promoting mental health can involve self-care practices, professional therapy, support from friends and family, and, when necessary, medical intervention.",
+          ]}
+          img="./mentalHealth.png"
         />
 
         <NoteCardLeftPic
           title="How Can A Counselor Help"
-          text1="A Licensed Professional Counselor (LPC) can help with mental health issues by providing a safe space to discuss thoughts and feelings, conducting assessments to identify concerns, developing personalized treatment plans, and offering support to help individuals manage their emotions, improve coping skills, and work towards positive changes in their lives."
+          text1="If Marica is a mental health counselor, her role likely involves providing emotional support, therapeutic guidance, and coping strategies to help individuals improve their mental well-being. Specific responsibilities could include:
+
+Assessment: Evaluating clients’ mental health needs through interviews, questionnaires, or observations to understand their concerns.
+
+Therapeutic Support: Using evidence-based counseling techniques (e.g., cognitive-behavioral therapy, mindfulness, or person-centered approaches) to address issues like anxiety, depression, trauma, or relationship challenges.
+
+Developing Treatment Plans: Collaborating with clients to set achievable goals and tailor interventions to their specific needs.
+
+Providing Education: Teaching clients about mental health, coping skills, emotional regulation, and strategies to handle stress or challenges.
+
+Crisis Intervention: Assisting clients during urgent mental health crises, such as suicidal thoughts, panic attacks, or severe emotional distress.
+
+Referral Services: Connecting clients with additional resources like psychiatrists, support groups, or community programs when necessary.
+
+Ongoing Support: Building a trusting relationship with clients to foster long-term growth and emotional resilience."
           img="./counseling.jpg"
         />
       </MainContent>
-    </div>
+   
 
     /* <ContentOneBlock>
           <section className="text-3xl font-semibold mb-5 border-b pb-5">
